@@ -25,17 +25,20 @@ export function Navigation() {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a 
-                key={item.name}
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-              >
-                {item.name}
+            <div className="hidden md:flex items-center gap-8">
+              <a href="/assessment" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Assessment
               </a>
-            ))}
-          </div>
+              <a href="/resources" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Resources
+              </a>
+              <a href="/community" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Community
+              </a>
+              <a href="/emergency" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+                Emergency
+              </a>
+            </div>
           
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
@@ -60,16 +63,18 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden border-t border-border py-4">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <a 
-                  key={item.name}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-primary transition-colors font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+              <a href="/assessment" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+                Assessment
+              </a>
+              <a href="/resources" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+                Resources
+              </a>
+              <a href="/community" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+                Community
+              </a>
+              <a href="/emergency" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+                Emergency
+              </a>
               <div className="flex flex-col gap-2 pt-4">
                 <Button variant="ghost">Sign In</Button>
                 <Button variant="default">Get Started</Button>

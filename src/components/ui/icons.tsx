@@ -17,7 +17,15 @@ import {
   Stethoscope,
   UserCheck,
   Menu,
-  X
+  X,
+  ArrowLeft,
+  Share,
+  Plus,
+  Search,
+  User,
+  Download,
+  Video,
+  AlertTriangle
 } from "lucide-react";
 
 export {
@@ -39,5 +47,13 @@ export {
   Stethoscope,
   UserCheck,
   Menu,
-  X
+  X,
+  ArrowLeft,
+  Share,
+  Plus,
+  Search,
+  User,
+  Download,
+  Video,
+  AlertTriangle
 };

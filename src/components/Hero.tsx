@@ -27,11 +27,16 @@ export function Hero() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="group"
+                onClick={() => window.location.href = '/assessment'}
+              >
                 Take Assessment Test
                 <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="xl">
+              <Button variant="outline" size="xl" onClick={() => window.location.href = '/emergency'}>
                 Get Emergency Help
               </Button>
             </div>
